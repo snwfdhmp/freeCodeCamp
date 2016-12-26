@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Portfolio snwfdhmp</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+	<script type="text/javascript" src="https://code.jquery.com/jquery-1.12.3.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$("li.navSelector").bind("click", function(){
+				$("li.active.navSelector").removeClass('active');
+				$(this).addClass('active');
+			});
+			$("li#presentation").bind("click", function(){
+				$('html, body').animate({
+					scrollTop: $("#presentationContainerSelect").offset().top
+				}, 750);
+			});
+			$("li#competences").bind("click", function(){
+				$('html, body').animate({
+					scrollTop: $("#competencesContainerSelect").offset().top
+				}, 750);
+			});
+		});
+	</script>
+
+
+	<div class="container-fluid col-md-8 col-md-offset-2">
+		<div class="row">
+			<div class="header clearfix">
+				<nav>
+					<ul class="nav nav-pills pull-right">
+						<li class="active navSelector" id="presentation">
+							<a href="#">Présentation</a>
+						</li>
+						<li class="navSelector" id="competences">
+							<a href="#">Compétences</a>
+						</li>
+						<li class="navSelector" id="realisations">
+							<a href="#">Réalisations</a>
+						</li>
+						<li class="navSelector" id="contact">
+							<a href="#">Contact</a>
+						</li>
+					</ul>
+					<h3 class="text-muted">Martinsurleweb</h3>
+				</nav>
+			</div>
+		</div>
+	</div>
+	<div class="container-fluid col-md-8 col-md-offset-2">
+		<br/>
+		<div class="jumbotron">
+			<div class="row">
+			<img src="http://bit.do/martinsurlewebphoto" alt="Photo de moi" class="img-responsive img-circle col-md-6 col-md-offset-3">
+		</div>
+
+		<!-- ESPACE DE PRESENTATION -->
+		<h1 class="text-primary text-center" id="presentationContainerSelect">Présentation</h1>
+		<div class="row">
+			<div>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+			</div>
+		</div>
+		<!-- FIN PRESENTATION -->
+
+		<!-- ESPACE COMPETENCES -->
+		<h1 class="text-primary text-center" id="competencesContainerSelect">Compétences</h1>
+		<div class="carousel slide" data-ride="carousel" id="myCarousel">
+			<ol class="carousel-indicators">
+				<li class="active" date-slide-to="0" data-target="#myCarousel">
+				</li>
+				<li class="" date-slide-to="1" data-target="#myCarousel">
+				</li>
+				<li class="" date-slide-to="2" data-target="#myCarousel">
+				</li>
+			</ol>
+			<div class="carousel-inner" role="list-box" id="myCarouselInner">
+				<div class="item active">
+					<div class="darkBg">
+						<img src="http://bit.do/b26kz" alt="freeCodeCamp" class="first-slide darker img-responsive">
+					</div>
+					<div class="container">
+						<div class="carousel-caption" id="firstCarousel">
+							<h1 id="fCCCaption">FreeCodeCamp</h1>
+							<h2 id="fCCSubCaption">Formation</h2>
+							<p class="caption"><em>Dev Front-End, Back-End, Data Visualization</em></p>
+							<p class="caption">Formation de développement web (en cours).</p>
+						</div>
+					</div>
+				</div>
+				<div class="item">
+					<div class="darkBg">
+						<img src="http://bit.do/b26kB" alt="IMAGE 2" class="second-slide darker img-responsive" id="imgCarousel2">
+					</div>
+					<div class="container">
+						<div class="carousel-caption">
+							<h1>Développement Software</h1>
+							<p><em>C++, Java, Ruby, ...</em></p>
+							<p>Apprentissage auto-didacte</p>
+						</div>
+					</div>
+				</div>
+				<div class="item">
+					<div class="darkBg">
+						<img src="http://bit.do/b26kp" alt="IMAGE 3" class="darker img-responsive third-slide">
+					</div>
+					<div class="container">
+						<div class="carousel-caption">
+							<h1>Guitariste</h1>
+							<p><em>Acoustique et électrique.</em></p>
+							<p>Tous styles de musiques.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- FIN COMPETENCES -->
+		</div>
+	</div>
+	</body>
+	</html>

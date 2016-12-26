@@ -1,0 +1,23 @@
+#firstCarousel {
+	color:white;
+}
+.darkBg {
+	background-color:black;
+} 
+.darker {
+	opacity:0.6;
+	filter:alpha(opacity=60);
+}
+#fCCCaption {
+	margin-bottom: 0;
+}
+#fCCSubCaption {
+	margin-top: 0;
+}
+.caption {
+	margin-bottom: 0;
+	margin-top: 2;
+}
+#imgCarousel2 {
+	height:392.867;
+}
